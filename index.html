@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8" />
 	<meta name="author" content="Tencent.AlloyTeam.Jetyu" />
@@ -9,11 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="./style/main.css" />
 
 </head>
+
 <body>
 
 	<div id="main">
 		<div id="control">
-			<h2 id="title">CRM Team Timer</h2>
+			<button id="startWorkButton" class="btn btn-primary">开始工作</button>
+			<a href="https://smarteng.github.io/drawio/src/main/webapp/index.html" target="_blank"
+				class="btn btn-primary">drawio</a>
 			<h5 id="subTitle">之番茄工作法</h5>
 			<div id="remainTime" class="remainTime">25:00</div>
 			<div id="progressBarBox" class="progress progress-striped">
@@ -21,7 +25,7 @@
 			</div>
 
 			<div id="currentTask"></div>
-			
+
 			<textarea id="taskName" rows="2" title="请输入任务...">请输入任务...</textarea>
 			<button id="startWorkButton" class="btn btn-primary">开始工作</button>
 			<button id="startRestButton" class="btn btn-warning">开始休息</button>
@@ -58,25 +62,27 @@
 				</li>
 			</ul>
 
-			
+
 			<button id="taskListButton" class="btn btn-info">任务记录</button>
 			<div id="taskListBoard">
 				<ul id="taskList"></ul>
 				<button id="clearTaskListButton" class="btn btn-danger">清空记录</button>
 			</div>
 		</div>
-		
-		<div class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script> <a href="http://www.smarteng.com/" target="_blank">Tencent JerryTeng</a>. All Rights Reserved.</div>
+
+		<div class="copyright">Copyright &copy;
+			<script>document.write(new Date().getFullYear());</script> <a href="http://www.smarteng.com/"
+				target="_blank">Tencent JerryTeng</a>. All Rights Reserved.</div>
 
 	</div>
-	
-	
+
+
 	<script src="./js/jx/jx.core.js"></script>
 	<script src="./js/jx/jx.base.js"></script>
 	<script src="./js/jx/jx.browser.js"></script>
 	<script src="./js/jx/jx.dom.js"></script>
 	<script src="./js/jx/jx.event.js"></script>
-	
+
 	<script src="./js/jx/jx.format.js"></script>
 	<script src="./js/jx/jx.date.js"></script>
 	<script src="./js/jx/jx.json.js"></script>
@@ -85,4 +91,5 @@
 
 	<script src="./js/alloy.timer.js"></script>
 </body>
+
 </html>
